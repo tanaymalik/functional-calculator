@@ -1,3 +1,6 @@
+
+
+
 body {
     display: flex;
     justify-content: center;
@@ -31,11 +34,23 @@ button {
 
 
 .screen {
+    display: flex;
     height: 300px;
     width: 600px;
     background-color: #343434;
     border-radius: 20px;
-   
+    justify-content: end;
+    align-items: flex-end;
+    
+
+    
+}
+
+.screen p {
+    font-size: 80px;
+    margin: 0px 20px 10px 0px;
+    color: #4e9a06;
+    overflow-x: scroll;
 }
 
 
@@ -48,6 +63,29 @@ button {
     justify-content: center;
     min-width: 400px;
 }
+
+.operator {
+    background-color: rgb(255, 170, 11);
+    border: #eaeaea;
+}
+
+.digit {
+    background-color: #343434;
+    color: aliceblue;
+    border: white;
+    transition: background-color 0.3s ease;
+}
+
+.clear ,  .equalsTo {
+    background-color: white;
+    border: white;
+}
+
+
+.digit:hover {
+    background-color: rgb(255, 170, 11); /* Color when hovering */
+    color: black;
+  }
 
 
 
